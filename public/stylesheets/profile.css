@@ -1,0 +1,207 @@
+body {
+  min-height: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 0;
+
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  margin-top: 50px;
+  justify-items: center;
+  width: 100vw;
+  background-color: #fafafa;
+}
+.main_Navigation {
+  height: 54px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #dbdbdb;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.main_Navigation .nav_Container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 975px;
+}
+.main_Navigation .logo_Container {
+  flex: 1 9999 0%;
+}
+.main_Navigation .search_Container {
+  flex: 0 1 auto;
+  height: 28px;
+  min-width: 125px;
+  width: 215px;
+  background-color: #fafafa;
+  border-color: #dbdbdb;
+  border-style: solid;
+  border-width: 1px;
+  color: #a5a7aa;
+}
+.input_Search {
+  background-color: #fafafa;
+  border-style: none;
+}
+.main_Navigation .menu_Container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 0 0%;
+}
+
+.main_Navigation .menu_Container .nav_MenuIcon {
+  margin-left: 22px;
+}
+.main_Navigation .nav_Container .logo_Container {
+  display: flex;
+}
+
+.main_Navigation .nav_Container .logo_Container .logo_image {
+  width: 103px;
+  height: 29px;
+}
+
+.search {
+  position: relative;
+  top: 3px;
+  left: 7px;
+  width: 1px;
+  height: 1px;
+}
+
+.menu_Container .user_image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.profile_Main .profile_MainContainer {
+  max-width: 935px;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px 0;
+  margin: 0 auto 30px;
+}
+
+.profile_Main .profile_MainContainer .profile_Header {
+  margin-bottom: 44px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.profile_Main .profile_MainContainer .profile_Header .profile_UserPicture {
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+  margin-left: 40px;
+  display: flex;
+  margin-right: 40px;
+}
+.profile_Main .profile_MainContainer .profile_Header .profile_Info {
+  display: flex;
+  flex-direction: column;
+}
+.profile_Main
+  .profile_MainContainer
+  .profile_Header
+  .profile_Info
+  .profile_Info1,
+.profile_Main
+  .profile_MainContainer
+  .profile_Header
+  .profile_Info
+  .profile_Info2,
+.profile_Main
+  .profile_MainContainer
+  .profile_Header
+  .profile_Info
+  .profile_Info3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.profile_Main
+  .profile_MainContainer
+  .profile_Header
+  .profile_Info
+  .profile_Info1 {
+  font-size: 28px;
+}
+
+.profile_Main
+  .profile_MainContainer
+  .profile_Header
+  .profile_Info
+  .profile_Info2 {
+  display: flex;
+  flex-direction: row;
+}
+.profile_Main
+  .profile_MainContainer
+  .profile_Header
+  .profile_UserPicture
+  .user_image {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: 0px solid #000;
+}
+main .profile_Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_PostsC,
+.profile_FollowersC,
+.profile_FollowsC {
+  font-weight: 700;
+}
+
+.profile_PostsC2,
+.profile_FollowersC2,
+.profile_FollowsC2 {
+  margin-right: 40px;
+}
+
+.Container_Profile_Posts {
+  display: flex;
+  flex-direction: column;
+}
+.profile_Posts {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 28px;
+  align-items: stretch;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.Container_Profile_Posts .profile_Posts .profile_Post {
+  margin-right: 28px;
+  cursor: pointer;
+  align-items: stretch;
+  flex: 1 0 0%;
+}
+.Container_Profile_Posts .profile_Posts .profile_Post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

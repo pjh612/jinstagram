@@ -1,0 +1,37 @@
+<article class="content">
+            <header class="content_Header">
+              <img
+                src="images/jhPicture.png"
+                alt=""
+                srcset=""
+                class="user_image"
+              />
+              <span class="user_ID">pjh_jn</span>
+            </header>
+            <div class="content_Images">
+              <img src="images/jhPicture.png" alt="" class="content_Image" />
+            </div>
+            <div class="content_Buttons">
+              <i class="far fa-heart fa-2x"></i>
+              <i class="far fa-comment fa-2x"></i>
+              <i class="far fa-paper-plane fa-2x"></i>
+            </div>
+            <div class="content_Like"></div>
+            <div class="content_Comments">
+              <div class="content_Comment"></div>
+              <div class="write_Comment">
+                <form class="form_Write_Comment" method="POST">
+                  <textarea
+                    aria-label="댓글 달기..."
+                    placeholder="댓글 달기..."
+                    class="input_Write_Comment"
+                    name=""
+                    id="input_Write_Comment"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                  <button class="btn_Write_Comment">게시</button>
+                </form>
+              </div>
+            </div>
+          </article>
