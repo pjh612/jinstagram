@@ -9,6 +9,10 @@ const follow = new mongoose.Schema({
 const userSchema = new mongoose.Schema({
   id: { type: String, unique: true, required: true },
   pwd: String,
+  name: { type: String, default: "" },
+  email: { type: String, default: "" },
+  phone: { type: String, default: "" },
+  introduction: { type: String, default: "" },
   followers: { type: [follower] },
   follows: { type: [follow] },
 });
@@ -19,10 +23,11 @@ const userSchema = new mongoose.Schema({
 //   }).exec();
 // };
 
-userSchema.statics.create = function (username, password) {
+userSchema.statics.create = function (id, password, name) {
   const user = new this({
-    id: username,
+    id: id,
     pwd: password,
+    name: name,
   });
   return user.save();
 };

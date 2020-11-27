@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  max-width: 935px;
+  width: 100%;
+}
+.main_Container {
+  flex: 1 1 400px;
+  border: 1px solid #dbdbdb;
+  min-width: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.main_Container .header {
+  display: flex;
+  flex-direction: row;
+  margin: 32px 0 0;
+}
+.main_Container .header .header_UserImageContainer {
+  width: 38px;
+  height: 38px;
+  margin: 2px 32px 0 124px;
+}
+.main_Container .header .header_UserImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.main_Container .header .header_SubContainer {
+  display: flex;
+  flex-direction: column;
+}
+.header_ChangeProfile {
+  color: #0095f6;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ta_Introduction {
+  height: 60px;
+
+  border: 1px solid #dbdbdb;
+  resize: vertical;
+
+  flex: 0 1 355px;
+  padding-right: 60px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.input_Email,
+.input_Phone,
+.input_Sex,
+.input_Name {
+  height: 32px;
+  border: 1px solid #dbdbdb;
+  resize: vertical;
+
+  padding-right: 60px;
+  padding: 0 10px;
+  flex: 0 1 355px;
+  border-radius: 3px;
+
+  box-sizing: border-box;
+  width: 100%;
+}
+.span_Name,
+.span_Introduction,
+.span_Sex,
+.span_Phone,
+.span_Email {
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn_submit {
+  background-color: #0095f6;
+}
+
+.container_Name,
+.container_Introduction,
+.container_Phone,
+.container_Email,
+.container_Sex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.aside_Introduction,
+.aside_Name,
+.aside_Phone,
+.aside_Email,
+.aside_Sex {
+  padding-right: 32px;
+  padding-left: 32px;
+  text-align: right;
+  flex: 0 0 194px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-top: 6px;
+}
+.container_TA,
+.container_Input {
+  width: 100%;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  max-width: 355px;
+}
+.span_Introduction,
+.span_Name,
+.span_Phone,
+.span_Email {
+  vertical-align: baseline;
+}

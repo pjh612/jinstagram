@@ -8,19 +8,19 @@ let contentID;
 //console.log("submit이벤트 테스트중");
 btnLike.forEach((element) => {
   element.addEventListener("click", (event) => {
-    console.log(event);
+    //console.log(event);
     //contentID를 찾는 함수 DFS
     contentID = findArticleID(
       event.target,
       0,
       event.target.parentElement.length
     );
-    console.log(sendLikeAjax("http://127.0.0.1:3000/like", contentID));
+    sendLikeAjax("http://127.0.0.1:3000/like", contentID);
   });
 });
 let content;
 async function sendLikeAjax(url, contentID) {
-  console.log("contentID =", contentID);
+  //console.log("contentID =", contentID);
   content = document.getElementById(`${contentID}`);
   let data = { contentID: contentID };
   const response = await fetch(url, {
@@ -31,9 +31,9 @@ async function sendLikeAjax(url, contentID) {
     body: JSON.stringify(data),
   });
   const datas = await response.json();
-  console.log(datas);
+  //console.log(datas);
   if (response.ok) {
-    console.log("contentID =", contentID);
+    // console.log("contentID =", contentID);
     var btnLike2 = document
       .getElementById(`${contentID}`)
       .querySelector("#btn_like");
@@ -64,7 +64,7 @@ async function sendLikeAjax(url, contentID) {
 
 function findArticleID(element, cnt, size) {
   let result;
-  console.log(element.parentElement.nodeName);
+  //console.log(element.parentElement.nodeName);
   if (element.parentElement.nodeName == "ARTICLE") {
     return element.parentElement.getAttribute("id");
   } else {

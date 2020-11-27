@@ -74,14 +74,6 @@ a:visited {
   height: 29px;
 }
 
-.search {
-  position: relative;
-  top: 3px;
-  left: 7px;
-  width: 1px;
-  height: 1px;
-}
-
 .main_Container {
   display: flex;
   justify-content: center;
@@ -109,6 +101,10 @@ a:visited {
   box-sizing: border-box;
   height: 60px;
   padding: 16px;
+}
+.main_Container .main_Section .contents .content .content_Header a {
+  display: flex;
+  align-items: center;
 }
 .main_Container .main_Section .contents .content .content_Header .user_image,
 .main_Navigation .nav_Container .menu_Container .user_image {
@@ -203,6 +199,19 @@ a:visited {
   width: 42px;
   height: 18px;
 }
+.main_Container .main_Section .contents .content .content_Buttons,
+.main_Container .main_Section .contents .content .content_Comments_List,
+.main_Container .main_Section .contents .content .content_description,
+.main_Container .main_Section .contents .content .content_Like,
+.content_Date {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.main_Container .main_Section .contents .content .content_Like,
+.main_Container .main_Section .contents .content .content_description {
+  margin-bottom: 4px;
+}
+
 .main_Container .side_Section {
   max-width: 293px;
   width: 100%;

@@ -1,0 +1,213 @@
+.body_Section {
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  margin-bottom: 44px;
+  background-color: #fafafa;
+}
+main {
+  background-color: #fafafa;
+  display: flex;
+  margin-top: 48px;
+  flex-direction: column;
+  max-width: 350px;
+}
+
+main .container1,
+main .container2 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dbdbdb;
+
+  margin-top: 12px;
+  flex-grow: 1;
+  padding: 10px 0;
+  margin: 0 0 10px;
+}
+
+main .container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .container1 .logo {
+  margin: 12px auto 6px;
+}
+
+main .container1 .signin_Desc .span_SignInDes {
+  color: #8e8e8e;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0 40px 10px;
+  text-align: center;
+  vertical-align: baseline;
+}
+main .container1 .login_Facebook,
+main .container1 .container_BtnSignIn {
+  margin-top: 8px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 8px;
+  display: flex;
+  flex: 0 0 auto;
+
+  flex-direction: column;
+}
+main .container1 .login_Facebook .btn_LoginFacebook {
+  background-color: #0095f6;
+  border-radius: 4px;
+  padding: 5px 8px;
+  border: 1px solid transparent;
+}
+main .container1 .login_Facebook .btn_LoginFacebook .span_LoginFacebook {
+  margin-right: 8px;
+  color: #fff;
+
+  font-weight: 600;
+}
+main .container1 .container_Input {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  margin: 0 40px 6px;
+}
+main .container1 .container_PhoneOrEmail,
+main .container1 .container_Name,
+main .container1 .container_UserNickName,
+main .container1 .container_PWD {
+  border-radius: 3px;
+  font-size: 14px;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+main .container1 .container_Input label {
+  height: 36px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1 0 0;
+  position: relative;
+}
+main .container1 .container_Input .span_Input {
+  position: absolute;
+  color: #8e8e8e;
+  font-size: 12px;
+  height: 36px;
+  line-height: 36px;
+  left: 8px;
+  right: 0px;
+  user-select: none;
+  transform-origin: left;
+}
+
+.inputed .span_Input {
+  transform: scale(0.83333) translateY(-10px);
+}
+
+main .container1 .container_Input input {
+  background-color: #fafafa;
+  line-height: 18px;
+  padding: 9px 0 7px 8px;
+  border: 0;
+  display: flex;
+  flex: 1 0 auto;
+}
+main .container1 .container_PhoneOrEmail .input_PhoneOrEmail,
+main .container1 .container_Name .input_Name,
+main .container1 .container_UserNickName .input_UserNickName,
+main .container1 .container_PWD .input_PWD {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.inputed input {
+  padding: 14px 0 2px 8px !important;
+}
+
+main .container1 .container_BtnSignIn .btn_SignIn {
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 5px 8px;
+}
+main .container1 .container_BtnSignIn .btn_SignIn:not([disabled]) {
+  background-color: #0095f6;
+}
+
+button[disabled] {
+  background-color: rgba(0, 149, 246, 0.3);
+}
+main .container1 .container_terms {
+  color: #8e8e8e;
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 40px;
+  line-height: 16px;
+}
+
+main .container2 {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+main .container2 .container2_1 {
+  margin: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+main .container2 .container2_1 .btn_login {
+  color: #0095f6;
+  text-decoration: none;
+}
+
+main .container1 .partition {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 10px 40px 18px;
+}
+
+main .container1 .partition .partition_1 {
+  background-color: #dbdbdb;
+  height: 1px;
+  top: 0.45em;
+
+  flex-grow: 1;
+}
+
+main .container1 .partition .partition_2 {
+  color: #8e8e8e;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 600;
+  margin: 0 18px;
+}
+main .container3 .container3_1 {
+  margin: 10px 20px 10px 20px;
+  font-size: 14px;
+}
+main .container3 .container3_2 {
+  margin: 10px 0 10px 0;
+}
+
+main .container3 .container3_2 img {
+  height: 40px;
+  margin-right: 8px;
+}
