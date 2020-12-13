@@ -1,7 +1,6 @@
-const { request } = require("express");
 var express = require("express");
 var router = express.Router();
-var Article = require("../public/javascripts/article.js");
+var Article = require("../public/javascripts/schemas/article.js");
 var connect_mongodb = require("../public/javascripts/connect_mongodb.js");
 router.get("/", function (req, res, next) {
   connect_mongodb(res);

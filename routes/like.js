@@ -1,37 +1,40 @@
 var express = require("express");
 var router = express.Router();
-const Article = require("../public/javascripts/article.js");
+const Article = require("../public/javascripts/schemas/article.js");
 const connect_mongodb = require("../public/javascripts/connect_mongodb.js");
 router.post("/", (request, response, next) => {
   let contentID = request.body.contentID;
-  let user = request.session.user.id;
+  let type = request.body.type;
+  let user_PK = request.session.user._id;
   connect_mongodb(response);
-  findandupdate(contentID, user);
+  findandupdate(contentID, user_PK);
   try {
-    response.json({ status: 200, user: user });
+    console.log("type = ", type);
+    response.json({ status: 200, user: user_PK, type: type });
   } catch (err) {
     next(err);
   }
 });
-async function findandupdate(contentID, user) {
-  const article = await Article.findOne(
-    { _id: contentID },
-    (err, article) => {}
-  );
+async function findandupdate(contentID, user_PK) {
+  const article = await Article.findOne({ _id: contentID });
 
   const like = article.likes.filter((USER) => {
-    return USER.id === user;
+    console.log(USER.id, user_PK);
+    return USER.id == user_PK;
   });
   console.log("like", like);
 
   if (like.length == 0) {
-    article.likes.push({
-      id: user,
+    await article.likes.push({
+      id: user_PK,
     });
   } else {
-    article.likes.pull({
-      id: user,
+    console.log("좋아요 취소");
+    const result = article.likes.filter((USER) => {
+      return USER.id == user_PK;
     });
+    console.log(result);
+    article.likes.pull(result[0]._id);
   }
 
   await article.save();

@@ -24,7 +24,7 @@ input_UserNickName.addEventListener("input", (event) => {
     label_UserNickName.classList.remove("inputed");
   } else {
     label_UserNickName.classList.add("inputed");
-    sendCheckAjax("http://127.0.0.1:3000/check2", input_UserNickName.value);
+    sendCheckAjax("http://192.168.0.8:3000/check2", input_UserNickName.value);
   }
 });
 
@@ -63,7 +63,7 @@ async function sendCheckAjax(url, value) {
     },
     body: JSON.stringify(data),
   });
-  console.log(btn_SignIn);
+
   if (response.status == 200) {
     btn_SignIn.removeAttribute("disabled");
   } else {

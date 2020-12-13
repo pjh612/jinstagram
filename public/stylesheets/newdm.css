@@ -1,0 +1,123 @@
+.dialog_Body {
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  background-color: rgba(var(--jb7, 0, 0, 0), 0.5);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.dialog {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  max-width: 935px;
+  flex-direction: column;
+  border-radius: 12px;
+  width: 400px;
+  height: 50%;
+}
+.dialog .container_Header {
+  display: flex;
+  height: 43px;
+  flex-direction: row;
+  border-bottom: 1px solid #dbdbdb;
+  align-items: center;
+}
+.dialog .container_Header .span_NewMSG {
+  flex-grow: 1;
+  text-align: center;
+  line-height: 24px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.dialog .container_SendTo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-height: 50%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.dialog .container_SendTo .span_SendTo {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.dialog .container_SendTo .container_Search {
+  flex-grow: 1;
+}
+.dialog .input_SendTo {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 30px;
+  outline: 0 !important;
+
+  border: 0;
+}
+.dialog .container_Users {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  flex: 1 1 auto;
+}
+.dialog .container_UserImage {
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.dialog .container_UserImage img {
+  width: 100%;
+  height: 100%;
+}
+.dialog .container_User {
+  display: flex;
+  flex-direction: row;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.dialog .container_UserInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog .container_UserID,
+.dialog .container_UserName {
+  margin-left: 12px;
+}
+
+.container_NewMSG svg {
+  cursor: pointer;
+}
+.btn_Close {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+}
+.btn_Close svg {
+}
+
+.btn_Next {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #0095f6;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}

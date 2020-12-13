@@ -6,7 +6,7 @@ if (btn_Follow) {
   btn_Follow.addEventListener("click", FollowHandler);
 }
 function FollowHandler() {
-  sendFollowAjax("http://127.0.0.1:3000/follow", toUser);
+  sendFollowAjax("http://192.168.0.8:3000/follow", toUser);
 }
 
 async function sendFollowAjax(url, toUser) {
@@ -28,9 +28,13 @@ async function sendFollowAjax(url, toUser) {
     //팔로우 됨
     btn_Follow.innerText = "언팔로우";
     btn_Follow.classList.add("un");
+    document.querySelector(".profile_FollowersC2").innerText =
+      parseInt(document.querySelector(".profile_FollowersC2").innerText) + 1;
   } else if (response_Data.status == 201) {
     //언팔로우됨
     btn_Follow.innerText = "팔로우";
     btn_Follow.classList.remove("un");
+    document.querySelector(".profile_FollowersC2").innerText =
+      parseInt(document.querySelector(".profile_FollowersC2").innerText) - 1;
   }
 }

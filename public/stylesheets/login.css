@@ -102,7 +102,9 @@ body {
   flex-grow: 1;
   position: relative;
 }
-
+.signUp_Container a {
+  text-decoration: none;
+}
 .down_Apple {
   margin-right: 8px;
 }
@@ -206,4 +208,19 @@ button[disabled] {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.container_LogInError {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_LogInError p {
+  color: #ed4956;
+  color: rgba(var(--i30, 237, 73, 86), 1);
+  margin: 10px 40px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
 }

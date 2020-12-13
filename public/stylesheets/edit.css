@@ -1,14 +1,29 @@
+html {
+  height: 100%;
+}
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex-direction: column;
+  background-color: #fafafa;
+  height: 100%;
 }
 .main {
   display: flex;
   flex-direction: row;
-  max-width: 935px;
+  justify-content: center;
   width: 100%;
+  height: 100%;
+}
+.container_EDIT {
+  margin: 30px auto 0;
+  margin-bottom: 30px;
+  display: flex;
+  max-width: 935px;
+  flex-grow: 1;
+  justify-content: center;
+  background-color: white;
 }
 .main_Container {
   flex: 1 1 400px;
@@ -21,11 +36,18 @@ body {
   display: flex;
   flex-direction: row;
   margin: 32px 0 0;
+  margin-bottom: 16px;
 }
 .main_Container .header .header_UserImageContainer {
   width: 38px;
   height: 38px;
   margin: 2px 32px 0 124px;
+}
+.main_Container .header .header_UserID {
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 2px;
+  font-weight: 400;
 }
 .main_Container .header .header_UserImage {
   width: 100%;
@@ -41,6 +63,10 @@ body {
   text-align: left;
   font-size: 14px;
   font-weight: 600;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 .ta_Introduction {
   height: 60px;
@@ -81,13 +107,21 @@ body {
 }
 .btn_submit {
   background-color: #0095f6;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 5px 9px;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
 }
 
 .container_Name,
 .container_Introduction,
 .container_Phone,
 .container_Email,
-.container_Sex {
+.container_Sex,
+.container_btn {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -98,10 +132,12 @@ body {
 .aside_Name,
 .aside_Phone,
 .aside_Email,
-.aside_Sex {
+.aside_Sex,
+.aside_Submit {
   padding-right: 32px;
   padding-left: 32px;
   text-align: right;
+
   flex: 0 0 194px;
   box-sizing: border-box;
   font-size: 16px;
@@ -121,4 +157,26 @@ body {
 .span_Phone,
 .span_Email {
   vertical-align: baseline;
+}
+
+.side_Container {
+  border-top: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  flex-basis: 236px;
+}
+
+.container_SideMenu {
+  font-weight: 600;
+  border-left: 2px solid transparent;
+  display: block;
+  font-size: 16px;
+
+  line-height: 20px;
+  padding: 16px 16px 16px 30px;
+  border-left-color: rgba(var(--f75, 38, 38, 38), 1);
+}
+
+button:active {
+  opacity: 0.7;
 }

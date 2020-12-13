@@ -1,9 +1,8 @@
 var express = require("express");
 var router = express.Router();
 var template = require("../public/javascripts/template.js");
-var qs = require("querystring");
 var connect_mongodb = require("../public/javascripts/connect_mongodb.js");
-const User = require("../public/javascripts/user.js");
+const User = require("../public/javascripts/schemas/user.js");
 /* GET home page. */
 router.get("/", function (req, res, next) {
   //세션이 없을경우 (로그인 필요)
@@ -63,7 +62,5 @@ router.post("/", (request, response) => {
     }
   });
 });
-router.get("/account/signin", function (req, res, next) {
-  res.send("asdf");
-});
+
 module.exports = router;

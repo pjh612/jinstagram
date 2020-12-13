@@ -1,0 +1,275 @@
+.dialog_Body {
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(var(--jb7, 0, 0, 0), 0.5);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.dialog {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+  max-width: 935px;
+}
+.dialog_Body .content {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dbdbdb;
+  color: #262626;
+  background-color: white;
+
+  margin-right: 335px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dialog_Body .content_Side {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 72px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 335px;
+  flex-shrink: 0;
+  overflow-x: hidden;
+}
+.dialog_Body .container_Middle {
+  width: 335px;
+  display: flex;
+
+  flex-direction: column;
+}
+.dialog_Body .content_Comments .comment_User,
+.dialog_Body .content_Description_UserID {
+  font-weight: 600;
+}
+.dialog_Body .content_Date {
+  font-size: 9px;
+}
+
+.dialog_Body .content .content_Like,
+.dialog_Body .content .content_description {
+  margin-bottom: 4px;
+}
+.dialog_Body .content .content_description {
+  margin: 0 -24px;
+  overflow-x: hidden;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  margin-bottom: 4px;
+  min-height: 0;
+  overflow: auto;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid #000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-y: scroll;
+
+  overflow-x: hidden;
+
+  width: calc(100% + 20px);
+}
+
+.dialog_Body .content_Description_UserImage {
+  display: flex;
+  align-items: center;
+}
+.dialog_Body .content_Description_UserImage a {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.dialog_Body .content_Comments {
+  display: flex;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-bottom: 4px;
+  min-height: 0;
+
+  align-items: stretch;
+  border: 0 solid #000;
+  box-sizing: border-box;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.dialog_Body .content .content_Comments_List {
+  box-sizing: content-box;
+  flex-grow: 1;
+  height: calc(100% - 32px);
+
+  left: 0;
+  position: absolute;
+}
+.dialog_Body .content_Comment {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.dialog_Body .content_Comment a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: black;
+}
+.dialog_Body .content_Buttons {
+  border-top: 1px solid #efefef;
+  margin-top: 4px;
+  padding-top: 4px;
+}
+.dialog_Body .content .content_Buttons,
+.dialog_Body .content .content_description,
+.dialog_Body .content .content_Like,
+.dialog_Body .content_Date,
+.dialog_Body .content_User {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.dialog_Body .content .content_Header {
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #dbdbdb;
+  box-sizing: border-box;
+  height: 60px;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  border-left: 1px solid rgba(var(--ce3, 239, 239, 239), 1);
+  width: 335px;
+}
+.dialog_Body .content .content_Header a {
+  display: flex;
+  align-items: center;
+}
+.dialog_Body .user_image,
+.dialog_Body .main_Navigation .nav_Container .menu_Container .user_image {
+  flex-grow: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.dialog_Body .content .content_Header .user_ID {
+  flex-grow: 1;
+  font-weight: 600;
+}
+.dialog_Body .content .content_Images {
+  max-width: 600px;
+  align-items: center;
+}
+.dialog_Body .content .content_Images .content_Image {
+  width: 100%;
+}
+.dialog_Body .content .content_Like {
+  font-size: 14px;
+}
+.dialog_Body .content .content_Like button {
+  border-style: none;
+  background-color: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
+.dialog_Body .content .content_Like button:focus {
+  border: none;
+  outline: none;
+}
+
+.dialog_Body .write_Comment {
+  border-top-width: 1px;
+  border-color: #dbdbdb;
+  border-top-style: solid;
+  display: flex;
+  flex-direction: row;
+}
+
+.dialog_Body .form_Write_Comment {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.dialog_Body .input_Write_Comment {
+  box-sizing: border-box;
+  margin: 10px;
+  width: 100%;
+  border-style: none;
+  height: 18px;
+  background: 0 0;
+  border: 0;
+  resize: none;
+  outline: 0;
+  padding: 0;
+  flex-grow: 1;
+  width: 0;
+}
+
+.dialog_Body .btn_Write_Comment {
+  border: 0;
+  background: 0 0;
+  color: #0095f6;
+  width: 42px;
+  height: 18px;
+  font-weight: 600;
+}
+
+.dialog_Body .btn_ExitP {
+  top: 0;
+  display: flex;
+  right: 0;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  padding: 12px 12px 12px 12px;
+  cursor: pointer;
+}
+
+.dialog_Body .btn_ExitP:focus {
+  outline: 0;
+}
+
+a:visited {
+  color: black;
+}
+button:disabled {
+  opacity: 0.3;
+}
+
+.comment_Date {
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  margin-left: 42px;
+}
+
+.container_Comment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

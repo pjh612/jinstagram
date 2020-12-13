@@ -6,6 +6,11 @@ const follower = new mongoose.Schema({
 const follow = new mongoose.Schema({
   id: { type: String },
 });
+
+const dm = new mongoose.Schema({
+  id: { type: String },
+});
+
 const userSchema = new mongoose.Schema({
   id: { type: String, unique: true, required: true },
   pwd: String,
@@ -15,6 +20,7 @@ const userSchema = new mongoose.Schema({
   introduction: { type: String, default: "" },
   followers: { type: [follower] },
   follows: { type: [follow] },
+  dms: [dm],
 });
 
 // userSchema.statics.findOne = function (id) {
